@@ -1,0 +1,14 @@
+apiVersion: 1
+
+datasources:
+  - name: influxdb
+    type: influxdb
+    access: proxy
+    url: http://influxdb:8086
+    secureJsonData:
+      token: W-Ds3r25dF3fws8OoyDH6h35Eru0jSrhMYbIP26GiHV8s46GInbcZFnCK1rW0zEhT7tM3s5Iwq2qVAIHGJ3otw==
+    jsonData:
+      version: Flux
+      organization: test
+      defaultBucket: telemetry
+      tlsSkipVerify: true
